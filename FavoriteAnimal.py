@@ -1,3 +1,4 @@
+import time
 class Cat():
     def __init__(self, name, stupidity, cuteness, clumsiness):
         self.name = name
@@ -23,32 +24,40 @@ def main():
     D = Cat("Ms. Kitty", "0%", "300%", "300%")
     F = Cat("Gato", "-50%", "400%", "50%")
 
-    print("Hi cat, what is your name?")
+    print("\nHi cat, what is your name?")
+    
+    time.sleep(2)
+    print("\n"+C.getName())
 
-    print(C.getName())
+    time.sleep(4)
+    print("\nHi other cat, what is your name?")
 
-    print("Hi other cat, what is your name")
+    time.sleep(2)
+    print("\n"+D.getName())
+    
+    time.sleep(4)
+    print("\nHi third cat, what is your name?")
+    
+    time.sleep(2)
+    print("\n"+F.getName())
+    
+    time.sleep(4)
+    print("\nCat Stupidity Levels: ")
+    print("\n"+C.getName() + ": " + str(C.getStupidity()))
+    print("\n"+D.getName() + ": " + str(D.getStupidity()))
+    print("\n"+F.getName() + ": " + str(F.getStupidity()))
+    
+    time.sleep(4)
+    print("\nCat Cuteness Levels: ")
+    print("\n"+C.getName() + ": " + str(C.getCuteness()))
+    print("\n"+D.getName() + ": " + str(D.getCuteness()))
+    print("\n"+F.getName() + ": " + str(F.getCuteness()))
 
-    print(D.getName())
-
-    print("Hi third cat, what is your name?")
-
-    print(F.getName())
-
-    print("Cat Stupidity Levels: ")
-    print(C.getName() + ": " + str(C.getStupidity()))
-    print(D.getName() + ": " + str(D.getStupidity()))
-    print(F.getName() + ": " + str(F.getStupidity()))
-
-    print("Cat Cuteness Levels: ")
-    print(C.getName() + ": " + str(C.getCuteness()))
-    print(D.getName() + ": " + str(D.getCuteness()))
-    print(F.getName() + ": " + str(F.getCuteness()))
-
-    print("Cat Clumsiness Levels: ")
-    print(C.getName() + ": " + str(C.getClumsiness()))
-    print(D.getName() + ": " + str(D.getClumsiness()))
-    print(F.getName() + ": " + str(F.getClumsiness()))
+    time.sleep(4)
+    print("\nCat Clumsiness Levels: ")
+    print("\n"+C.getName() + ": " + str(C.getClumsiness()))
+    print("\n"+D.getName() + ": " + str(D.getClumsiness()))
+    print("\n"+F.getName() + ": " + str(F.getClumsiness()))
 
 
 
