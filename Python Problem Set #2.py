@@ -14,10 +14,7 @@ def factorial():
         factorial = 1
         for i in range(1, int(num1) + 1): # Figured out how range actually works
             factorial *= i
-        print(num1)#[::-1]) 
-        # I couldn't figure out how to JUST make it print the last one (since
-        # it for some reason prints multiple numbers), so the [::-1] shortcuts it
-        # and just prints the last one. Sort of a crude fix, but it'll do.
+        print(num1)
         print("The factorial of " + str(num1) + " is " + str(factorial))
                           
 
